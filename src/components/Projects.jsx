@@ -7,11 +7,11 @@ const projectData = [
   { 
     title: "Menuhood", 
     cat: "MERN SaaS Platform", 
-    desc: "A digital intelligence system for restaurants featuring QR menus and real-time order tracking logic.",
+    desc: "Transforming the dining experience across Nepal with premium digital menu solutions.",
     tags: ["MongoDB", "ExpressJS", "React", "NodeJS"],
     img: "/menuhood.png",
     color: "text-sky-400",
-    liveLink: "https://menuhood.com", 
+    liveLink: "https://menuhood.vercel.app/", 
     isLive: true
   },
   { 
@@ -21,38 +21,38 @@ const projectData = [
     tags: ["React", "Framer Motion", "Tailwind CSS"],
     img: "/loopix.png",
     color: "text-purple-400",
-    liveLink: "https://loopix.com.np", 
+    liveLink: "https://loopixcreations.com.np/", 
     isLive: true
   },
   { 
     title: "Oxford Blog", 
     cat: "Educational Hub", 
-    desc: "A community-focused blogging platform designed for academic sharing and collaborative content management.",
+    desc: "A college blogging platform designed for academic sharing and collaborative content management.",
     tags: ["React", "Tailwind CSS"],
     img: "/blog1.png",
     color: "text-blue-400",
-    liveLink: "https://oxfordblog.com", 
+    liveLink: "https://www.blog.oxfordcollege.edu.np/crearelist", 
     isLive: true
   },
   { 
     title: "Satya Khabar", 
     cat: "News Portal", 
-    desc: "A scalable news architecture designed for high-traffic and real-time content delivery with a custom-built CMS.",
+    desc: "Satya Khabar is a fully dynamic news website with a custom admin panel. It allows you to easily create and manage different categories content",
     tags: ["PHP", "MySQL", "EJS", "Tailwind CSS"],
     img: "/homepage.png",
     color: "text-orange-400",
     liveLink: "#", 
-    isLive: false // Button is hidden
+    isLive: false 
   },
   { 
     title: "Bus Location Tracker", 
     cat: "Real-time Tracking", 
-    desc: "A location-based service using live coordinates to provide accurate bus arrival times and fleet management.",
+    desc: "Provides real-time bus locations for users and a full CRUD dashboard to manage data for the mobile application.",
     tags: ["Tailwind CSS", "React", "API Integration"],
     img: "/busadmin.png",
     color: "text-emerald-400",
     liveLink: "#",
-    isLive: false // Button is hidden
+    isLive: false 
   }
 ];
 
@@ -62,22 +62,22 @@ export default function Projects() {
   const showMore = () => setVisibleCount((prev) => prev + 3);
 
   return (
-    <section id="projects" className="max-w-7xl mx-auto px-6 py-32 bg-black">
+    <section id="projects" className="max-w-7xl mx-auto px-6 py-16 sm:py-32 bg-black">
       
       {/* --- HEADER SECTION --- */}
       <div className="mb-20">
         <div className="flex items-center gap-4 mb-4">
-          <span className="text-sm font-bold tracking-[0.5em] text-sky-400 uppercase">
+          <span className="text-sm font-bold tracking-[0.3em] text-sky-400 uppercase">
             Portfolio
           </span>
         </div>
 
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-          <h3 className="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase leading-[0.9]">
+          <h3 className="text-4xl sm:5xl md:text-7xl font-black text-white tracking-tighter uppercase leading-[0.9]">
             Selected <br /> 
             <span className="text-zinc-500 italic font-medium">Projects.</span>
           </h3>
-          <p className="text-zinc-500 max-w-[360px] text-sm leading-relaxed border-l border-zinc-800 pl-6">
+          <p className="text-zinc-500 max-w-[360px] text-sm leading-relaxed border-l border-zinc-800 sm:pl-6">
             Crafting <span className="text-zinc-300 font-bold">modern web experiences</span> through 
             <span className="text-zinc-300"> clean code</span> and <span className="text-zinc-300"> functional design</span>.
           </p>
@@ -85,7 +85,7 @@ export default function Projects() {
       </div>
 
       {/* --- PROJECTS LIST --- */}
-      <div className="space-y-[20vh] md:space-y-[30vh]">
+      <div className="space-y-[10vh] md:space-y-[20vh]">
         <AnimatePresence mode="wait">
           {projectData.slice(0, visibleCount).map((p, i) => (
             <motion.div 
@@ -100,11 +100,11 @@ export default function Projects() {
               <div className="lg:w-1/3 lg:sticky lg:top-40 h-fit">
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
-                    <span className="text-zinc-800 font-black text-5xl">0{i + 1}</span>
+                    <span className="text-zinc-500 font-black text-3xl sm:text-5xl">0{i + 1}</span>
                     <div className="h-[2px] w-12 bg-sky-400" />
                   </div>
                   
-                  <h4 className={`text-5xl font-black uppercase tracking-tighter ${p.color}`}>
+                  <h4 className={`text-3xl sm:text-5xl font-black uppercase tracking-tighter ${p.color}`}>
                     {p.title}
                   </h4>
                   

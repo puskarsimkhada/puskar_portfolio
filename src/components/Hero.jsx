@@ -16,9 +16,9 @@ export default function Hero() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="relative mb-8"
+        className="relative mb-5 sm:mb-8"
       >
-        <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full p-1 bg-gradient-to-tr from-sky-400 to-emerald-400 shadow-lg shadow-sky-500/20">
+        <div className="relative w-30 h-30 md:w-32 md:h-32 rounded-full p-1 bg-gradient-to-tr from-sky-400 to-emerald-400 shadow-lg shadow-sky-500/20">
           <div className="w-full h-full rounded-full overflow-hidden border-4 border-black relative">
             <Image 
               src="/PuskarProfile.jpg" 
@@ -39,13 +39,13 @@ export default function Hero() {
         className="text-center px-6 z-10"
       >
         {/* 3. Sub-heading with Badge Style */}
-        <div className="inline-block px-4 py-1.5 mb-6 rounded-full border border-white/10 bg-white/5 backdrop-blur-md">
+        <div className="inline-block px-4 py-1.5 mb-4 sm:mb-6 rounded-full border border-white/10 bg-white/5 backdrop-blur-md">
           <span className="text-xs font-bold tracking-widest uppercase text-sky-400">
             Available for Freelance
           </span>
         </div>
 
-        <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.85] uppercase">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter mb-5 sm:mb-8 leading-[0.85] uppercase">
           I'm <span className="text-sky-400">Puskar</span> <br />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 via-emerald-400 to-sky-400">
             WEB DEVELOPER

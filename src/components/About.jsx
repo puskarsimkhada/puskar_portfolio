@@ -5,18 +5,17 @@ import Image from 'next/image';
 const skills = [
   { name: "Frontend", tools: "React, Next.js, Tailwind", level: "80%" },
   { name: "Backend", tools: "Node, Express, MongoDB", level: "50%" },
-  // Changed "Design" to "Product & Logic" to fit your MERN & SaaS focus
   { name: "Tools", tools: "VS Code, Postman, Android Studio", level: "70%" },
 ];
 
 export default function About() {
   return (
-    <section id="about" className="max-w-7xl mx-auto px-6 py-32">
+    <section id="about" className="max-w-7xl mx-auto px-6 py-6 sm:py-32">
       {/* Section Header */}
-      <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+      <div className="flex flex-col md:flex-row justify-between items-start mb-10 sm:mb-16 gap-4">
         <div className="max-w-2xl">
           <h2 className="text-sm font-bold tracking-[0.2em] text-sky-400 uppercase mb-4">Web Developer</h2>
-          <h3 className="text-5xl md:text-7xl font-black tracking-tighter leading-none">
+          <h3 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter leading-none">
             TURNING VISION <br /> <span className="text-zinc-500">INTO REALITY.</span>
           </h3>
         </div>
@@ -30,7 +29,7 @@ export default function About() {
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="lg:col-span-7 relative group h-[450px] overflow-hidden rounded-[2.5rem] border border-white/5"
+          className="lg:col-span-7 relative group h-[450px] overflow-hidden rounded-[1.5rem] border border-white/5"
         >
           <Image 
             src="/PuskarPro.png" 
@@ -50,7 +49,7 @@ export default function About() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="lg:col-span-5 bg-zinc-900/40 backdrop-blur-3xl border border-white/5 p-10 rounded-[2.5rem] flex flex-col justify-center"
+          className="lg:col-span-5 bg-zinc-900/40 backdrop-blur-3xl border border-white/5 p-2 sm:p-10 rounded-[2.5rem] flex flex-col justify-center "
         >
           <h4 className="text-xl font-bold mb-8">Technical Proficiency</h4>
           <div className="space-y-8">
@@ -89,7 +88,7 @@ export default function About() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: i * 0.1 }}
-              className="p-8 rounded-[2rem] bg-zinc-900/20 border border-white/5 text-center hover:bg-white/5 transition-colors"
+              className="p-3 sm:p-8 rounded-[2rem] bg-zinc-900/20 border border-white/5 text-center hover:bg-white/5 transition-colors"
             >
               <span className="block text-4xl md:text-5xl font-black text-white mb-2">{stat.value}</span>
               <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-500 font-bold">{stat.label}</span>

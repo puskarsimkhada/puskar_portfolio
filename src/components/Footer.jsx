@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black border-t border-zinc-900 py-12 px-6">
+    <footer className="bg-black border-t border-zinc-900 py-8 sm:py-12 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         
         {/* Left Side: Copyright */}
@@ -15,7 +15,7 @@ export default function Footer() {
           </p>
           <div className="hidden md:block h-1 w-1 rounded-full bg-zinc-800" />
           <p className="text-[10px] text-zinc-400 uppercase tracking-[0.2em] font-medium">
-            CO-founder - Loopix Creations
+            Co-Founder - Loopix Creations
           </p>
         </div>
 
