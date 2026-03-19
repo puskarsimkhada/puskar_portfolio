@@ -10,7 +10,7 @@ const skills = [
 
 export default function About() {
   return (
-    <section id="about" className="max-w-7xl mx-auto px-6 py-6 sm:py-32">
+    <section id="about" className="max-w-7xl mx-auto px-6 py-12 sm:py-32">
       {/* Section Header */}
       <div className="flex flex-col md:flex-row justify-between items-start mb-10 sm:mb-16 gap-4">
         <div className="max-w-2xl">
@@ -35,10 +35,10 @@ export default function About() {
             src="/PuskarPro.png" 
             alt="Puskar"
             fill
-            className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+            className="object-cover sm:grayscale sm:group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-          <div className="absolute bottom-8 left-8">
+          <div className="absolute bottom-6 left-4 sm:bottom-8 sm:left-8">
             <p className="text-white font-bold text-2xl tracking-tight">Puskar Simkhada</p>
             <p className="text-sky-400 text-sm font-medium">Founder @ Loopix Creations</p>
           </div>

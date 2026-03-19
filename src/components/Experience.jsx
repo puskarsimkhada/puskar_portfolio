@@ -35,7 +35,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="max-w-7xl mx-auto px-6 py-16 sm:py-32 bg-black">
+    <section id="experience" className="max-w-7xl mx-auto px-6 py-4 sm:py-32 bg-black">
       
       {/* Header */}
       <div className="mb-10 sm:mb-24">

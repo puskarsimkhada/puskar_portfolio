@@ -4,7 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Puskar Simkhada | Frontend Developer",
+  title: "Puskar Simkhada",
   description: "Portfolio of Puskar Simkhada, a developer from Chitwan, Nepal.",
 };
 

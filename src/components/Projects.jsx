@@ -57,14 +57,11 @@ const projectData = [
 ];
 
 export default function Projects() {
-  // Logic to show 5 projects by default
   const [visibleCount, setVisibleCount] = useState(5);
   const showMore = () => setVisibleCount((prev) => prev + 3);
 
   return (
-    <section id="projects" className="max-w-7xl mx-auto px-6 py-16 sm:py-32 bg-black">
-      
-      {/* --- HEADER SECTION --- */}
+    <section id="projects" className="max-w-7xl mx-auto px-6 py-30 bg-black">
       <div className="mb-20">
         <div className="flex items-center gap-4 mb-4">
           <span className="text-sm font-bold tracking-[0.3em] text-sky-400 uppercase">
