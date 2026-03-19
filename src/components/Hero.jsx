@@ -45,7 +45,7 @@ export default function Hero() {
           </span>
         </div>
 
-        <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter mb-5 sm:mb-8 leading-[0.85] uppercase">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-normal mb-5 sm:mb-8 leading-[0.85] uppercase">
           I'm <span className="text-sky-400">Puskar</span> <br />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 via-emerald-400 to-sky-400">
             WEB DEVELOPER
